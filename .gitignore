@@ -140,3 +140,8 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+.idea/dp_gstu_troshkin.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
