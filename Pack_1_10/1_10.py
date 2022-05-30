@@ -2,6 +2,9 @@ import collections
 from Pack_1_10.config import *
 import math
 from prettytable import PrettyTable
+import Pack_1_8.p1_8
+from Pack_1_9.p1_9 import Kz_list, Twt_list
+import Pack_1_10.config
 
 
 def calculations(*operations):
@@ -18,8 +21,10 @@ def calculations(*operations):
             Opr_list.append(Opr)
 
             info_table.add_row([num[0], num[1], num[2], num[3], nzph, O, Opr])
+
     info_table.add_row(['' for _ in range(7)])
     info_table.add_row(['ИТОГО:', '', '', '', '', '', sum(Opr_list)])
+    print(f'Пункт 1.10')
     print(info_table)
 
 

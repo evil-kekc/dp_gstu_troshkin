@@ -3,8 +3,11 @@ from Pack_1_9.config import *
 import math
 from prettytable import PrettyTable
 
+global Kz_list, Twt_list
+
 
 def calculations(*operations):
+    global Kz_list, Twt_list
     Kz_list = []
     Ko_list = []
     Km_list = []
@@ -49,7 +52,8 @@ def calculations(*operations):
     info_table.add_row(['' for _ in range(12)])
     info_table.add_row(['ИТОГО:', '', '', sum(To_list), sum(Twt_list), '', '', sum(Kz_list), sum(Ko_list), '', '',
                         sum(Km_list)])
-    print(info_table)
+    print(f'Пункт 1.9')
+    print(info_table, '\n')
 
 
 all_operations = operation_1, operation_2, operation_3, operation_4, operation_5, operation_6

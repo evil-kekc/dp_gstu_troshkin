@@ -11,7 +11,7 @@ def calculations(*operations):
         for num in info:
             Tpz = num[2]
             To = num[1]
-            n = 5000
+            n = 20000
             Tb = 0.285
 
             Top = To + Tb
@@ -29,7 +29,8 @@ def calculations(*operations):
 
     info_table.add_row(['' for _ in range(7)])
     info_table.add_row(['ИТОГО:', '', '', '', '', '', sum(Twtk_list)])
-    print(info_table)
+    print(f'\nПункт 1.8')
+    print(info_table, '\n')
 
 
 all_operations = operation_1, operation_2, operation_3, operation_4, operation_5, operation_6
